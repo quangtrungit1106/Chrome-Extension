@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
           })
           .catch(error => {
               console.error('Error fetching the API:', error);
-              document.getElementById('loading').textContent = 'Error loading data: ' + error;
+              document.getElementById('loading').textContent = 'Error loading data.';
           });
   }
 
