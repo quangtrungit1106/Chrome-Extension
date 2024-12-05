@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
       })
         .then(response => response.json())
         .then(data => {
-              if (data.result === 1) {
+              if (data.result === 0.0) {
                   document.getElementById('safe').style.display = 'block';
                   document.getElementById('loading').style.display = 'none';
                   document.getElementById('cheat').style.display = 'none';
-              } else if (data.result === 0) {
+              } else if (data.result === 1.0) {
                   document.getElementById('safe').style.display = 'none';
                   document.getElementById('cheat').style.display = 'block';
                   document.getElementById('loading').style.display = 'none';
