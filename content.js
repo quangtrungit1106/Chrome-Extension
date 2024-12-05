@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
       const message = notification.querySelector('p');
       const closeButton = notification.querySelector('button');
       const notificationBox = notification.firstElementChild;
-      if(data.result === 1){
+      if(data.result === 0.0){
         message.textContent = 'Website không có dấu hiệu lừa đảo!';
         notificationBox.style.backgroundColor = '#d4edda'; // Màu xanh lá cây nhạt
         notificationBox.style.borderColor = '#c3e6cb'; // Màu viền xanh lá cây nhạt
